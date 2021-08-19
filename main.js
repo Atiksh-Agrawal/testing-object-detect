@@ -23,7 +23,7 @@ if(status != ""){
     percent = floor(objects[i].confidence * 100);
     fill("red");
     stroke("red");
-    text(objects[i].label  +" "+percent + "%", objects[i].x, objects[i].y);
+    text(objects[i].label  +" "+percent + "%", objects[i].x + 15, objects[i].y + 15);
     noFill();
     rect(objects[i].x ,objects[i].y ,objects[i].width ,objects[i].height);
   }
